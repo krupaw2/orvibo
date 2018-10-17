@@ -123,9 +123,9 @@ ir = device.learn('test.ir', timeout=15) # AllOne red light is present,
                                            # waiting for ir signal for 15 seconds and stores it to test.ir file
 if ir is not None:
     # Emit IR code from "test.ir"
-    device.emit('test.ir')
+    device.emit_ir('test.ir')
     # Or with the same result
-    # device.emit(ir)
+    # device.emit_ir(ir)
 ```
 #### Keeping connection to Orvibo device
 
